@@ -22,8 +22,8 @@
         <Button x:Name="downVoteButton" Content="🔽" Grid.Column="1" HorizontalAlignment="Left" Margin="100,180,0,0" VerticalAlignment="Top" Width="30" Height="30" Click="downVoteButton_Click"/>
         <TextBlock x:Name="titleViewBlock" Grid.Column="1" HorizontalAlignment="Center" Margin="0,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="380" Height="22"/>
         <TextBlock x:Name="dateBlock" Grid.Column="1" HorizontalAlignment="Right" Margin="0,180,0,0" Text="Date" TextWrapping="Wrap" VerticalAlignment="Top" Width="145" Height="20"/>
-        <TextBlock x:Name="upVoteBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="45,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="17" Height="26" FontSize="16"/>
-        <TextBlock x:Name="downVoteBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="135,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="17" Height="26" FontSize="16"/>
+        <TextBlock x:Name="upVoteBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="45,183,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25" Height="26" FontSize="16"/>
+        <TextBlock x:Name="downVoteBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="135,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="25" Height="26" FontSize="16"/>
 
     </Grid>
 </Window>

@@ -20,6 +20,8 @@ namespace PostUI
     /// </summary>
     public partial class MainWindow : Window
     {
+        Post post;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +29,7 @@ namespace PostUI
 
         private void postButton_Click(object sender, RoutedEventArgs e)
         {
-            Post post = new Post(titleBox.Text, descriptionBox.Text);
+            post = new Post(titleBox.Text, descriptionBox.Text);
 
             titleViewBlock.Text = post.Title;
             descriptionViewBlock.Text = post.Description;
@@ -36,16 +38,12 @@ namespace PostUI
 
         private void upVoteButton_Click(object sender, RoutedEventArgs e)
         {
-            Post post = new Post(titleBox.Text, descriptionBox.Text);
-
             post.UpVote();
             upVoteBlock.Text = post.UpVotes.ToString();
         }
 
         private void downVoteButton_Click(object sender, RoutedEventArgs e)
         {
-            Post post = new Post(titleBox.Text, descriptionBox.Text);
-
             post.DownVote();
             downVoteBlock.Text = post.DownVotes.ToString();
         }
