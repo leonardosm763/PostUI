@@ -24,5 +24,30 @@ namespace PostUI
         {
             InitializeComponent();
         }
+
+        private void postButton_Click(object sender, RoutedEventArgs e)
+        {
+            Post post = new Post(titleBox.Text, descriptionBox.Text);
+
+            titleViewBlock.Text = post.Title;
+            descriptionViewBlock.Text = post.Description;
+            dateBlock.Text = post.TimeCreated.ToString();
+        }
+
+        private void upVoteButton_Click(object sender, RoutedEventArgs e)
+        {
+            Post post = new Post(titleBox.Text, descriptionBox.Text);
+
+            post.UpVote();
+            upVoteBlock.Text = post.UpVotes.ToString();
+        }
+
+        private void downVoteButton_Click(object sender, RoutedEventArgs e)
+        {
+            Post post = new Post(titleBox.Text, descriptionBox.Text);
+
+            post.DownVote();
+            downVoteBlock.Text = post.DownVotes.ToString();
+        }
     }
 }
